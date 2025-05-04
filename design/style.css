@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --primary-color :#EF3742;
+    --secondary-color: #A93439;
+    --font-menu: "Fira Code", monospace;
+}
+
+header{
+    background-image: url("https://res.cloudinary.com/diogirqun/image/upload/v1746293182/camisas_smfqll.jpg");
+    background-color: var(--secondary-color);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    clip-path: ellipse(77% 50% at 50% 38%);
+}
+
+main{
+    margin-bottom: 2rem;
+}
+
+.logo img{
+    height: 5rem;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    background: linear-gradient(180deg,rgba(44, 39, 39, 0) 50%, rgba(0, 0, 0, 0.582) 90%);
+}
+
+.new-section{
+    margin-top: 4rem;
+    height: 70vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0px 20%;
+
+    color: #f0f0f0;
+    text-align: center;
+
+}
+
+.new-div-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    background: #FFFFFF00;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 90%);
+
+}
+
+.main-section{
+    margin-top: 2rem;
+    text-align: center ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    max-width: 20rem;
+    margin: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow:  -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
+    border-radius: 50px;
+    border-radius: 20px;
+
+}
+
+.bottom-card{
+    text-align: start;
+    padding: 0rem 1rem;
+}
+
+img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+button{
+    width: 6rem;
+    height: 2.5rem;
+    border: 2px solid #A93439;
+    border-radius: 5px;
+    color: #A93439;
+    margin: 1rem 0rem;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: bold;
+}
+
+
+footer{
+    background: #EF3742;
+    background: linear-gradient(325deg,rgba(239, 55, 66, 1) 0%, rgba(169, 52, 57, 1) 50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-footer{
+    margin: 1rem 4rem;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.icons svg{
+    width: 35px;
+    height: auto;
+}
+
+.a-icon{
+    color: #fffcfc;
+}
+
+/*Estilando texto*/
+.nav-a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--font-menu);
+}
+
+h2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h3{
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 400;
+}
+
+h4{
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+p{
+    font-family: "Kantumruy Pro", sans-serif;
+    font-style: italic;
+}
+
+strong{
+    color: #A93439;
+    text-decoration:line-through;
+    font-weight: 500;
+}
+
+/*Estilando promos*/
+
+.cuadricula{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card-horizontal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    max-width: 25rem;
+
+    border-radius: 20px;
+
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow:  -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
+
+}
+
+.ch-img{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+
+    
+}
+
+.card-horizontal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media(min-width:920px){
+    header{
+        height: 70vh;
+    }
+
+    .nav-links{
+        flex-direction: row;
+    }
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0rem 1rem;
+        height: 20%;
+        background: none;
+    }
+    
+    .new-section{
+        height: 100vh;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    h2{
+        font-size: 5rem;
+    }
+}
